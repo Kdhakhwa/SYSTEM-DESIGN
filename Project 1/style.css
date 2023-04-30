@@ -1,0 +1,185 @@
+*{box-sizing: border-box; -webkit-box-sizing: border-box; }
+html { 
+        height: 100%; 
+         }
+    body {
+        margin: 0;
+        background-color: #15e04e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        /*padding: 1%;*/
+        text-align: center;
+		font-family:"Libre Baskerville", "serif";
+        font-size: 30;
+        letter-spacing: 0.9em;
+          }
+  \
+     
+    /* Area of slide styling */
+     
+    #slideshow {
+      border-radius: 5px;
+        box-shadow: 0px 4px 10px rgb(167, 10, 23)
+        overflow: hidden;
+        height: 1500px;
+        width: 1500px;
+        margin: 0 auto;
+    }
+     
+    /* Slides height and width set*/
+     
+    .slide {
+        float: left;
+        height: 1500px;
+        width: 1500px;
+    }
+     
+    /* Adding animation to the slides */
+     
+    .slide-wrapper {
+         
+        /* Calculate the total width on the
+      basis of number of slides */
+        width: calc(1500px * 4);
+         
+        /* Specify the animation with the
+      duration and speed */
+        animation: slide 10s ease infinite;
+    }
+     
+    /* using media query to define the slide */
+     
+    @keyframes slide {
+         
+        
+        20% {
+            margin-left: 0px;
+        }
+        40% {
+            margin-left: calc(-1500px * 1);
+        }
+        60% {
+            margin-left: calc(-1500px * 2);
+        }
+        80% {
+            margin-left: calc(-1500px * 3);
+        }
+    }
+
+/* This is for NavBar */
+ .navbar {
+        overflow: hidden;
+        background-color: hsl(0, 0%, 0%);
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      .navbar a {
+        float: left;
+        display: block;
+        color: #e10a0a;
+        text-align: center;
+        padding: 15px 18px;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      .navbar a:hover {
+        color: #11e14c;
+      }
+      .container {
+        padding: 18px;
+        margin-top: 35px;
+        height: 100%;
+      }
+*,
+*::before,
+*::after { box-sizing: border-box; }
+card{
+	width: 980px;
+	height: 750px;
+	border: 0;
+}
+
+.p3 {
+  font-family: "Libre Baskerville", "serif";
+	color: #d41313;
+}
+.h2{
+	font-family: "Playfair Display", "serif";
+	color: #d80d17;
+}
+.container{
+	color: #e00934;
+	font-size: 20;
+}
+.topmovie{
+	margin: 0;
+    padding: .3rem;
+    background-color: #0aed24;
+    font: 1rem "Playfair Display", "serif";
+}
+.auto-fit {
+           margin: 0;
+			padding: .3rem;
+			background-color: #04ca35;
+			font: 1rem "Playfair Display", "serif";
+			width: 90vw;
+            margin-top: 4%;
+            border-radius: 3px;
+            border:#0f0101 ;
+            display: grid;
+}
+#fcf-form {
+    display:block;
+}
+
+.fcf-body {
+    margin: 0;
+    font-family: 'Lato', Georgia, serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #db0d0d;
+    text-align: left;
+    background-color: #06eb33;
+    padding: 30px;
+    padding-bottom: 10px;
+    border: 1px solid #d3d7d4;
+    border-radius: 0.25rem;
+    max-width: 100%;
+}
+
+.fcf-form-group {
+    margin-bottom: 1rem;
+}
+
+.fcf-input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.fcf-form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+	font-family:  'Lato', Georgia, serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #090101;
+    background-color: #e0e7e0;
+    background-clip: padding-box;
+    border: 1px solid #f4f9f6;
+    outline: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
